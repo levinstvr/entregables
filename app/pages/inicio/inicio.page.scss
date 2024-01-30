@@ -1,0 +1,31 @@
+
+
+.contenido_fondo{
+    background-image: url('../../../assets/fondito.png'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+}
+
+.titulo{
+  font-size: 24px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #F5F5F5; /* Color azul (puedes cambiarlo) */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin-top: 20px; /* Espacio superior */
+  text-transform: uppercase; /* Convertir el texto en mayúsculas */
+  /* Agregar sombra de texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ion-header {
+  --ion-background-color: #000485; /* Azul marino */
+}
+
+ion-content {
+  --background: url('../../../assets/fondito.png')  ;
+  background-size : auto;
+  
+  }
+
+ 

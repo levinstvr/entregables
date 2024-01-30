@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Detalle de Animalito</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/listar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{docente.id}}</ion-card-subtitle>
+      <ion-card-title>Nombre:{{docente.nombre}} </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span>Asignatura:{{docente.asignatura}} </span>
+    </ion-card-content>
+      
+   
+    <ion-button [routerLink]="['/actualizar', docente.id]"color="warning"> 
+      <ion-icon name="create"></ion-icon> </ion-button>
+    <ion-button [routerLink]="['/eliminar', docente.id]"color="danger"> 
+      <ion-icon name="trash"></ion-icon> </ion-button>
+  </ion-card>
+</ion-content>

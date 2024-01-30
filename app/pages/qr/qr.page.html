@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-back-button defaultHref="inicio" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">REGISTRAR ASISTENCIA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <p style="text-align: center; color: #FFD700; font-weight: bold;">Hola! {{nombre}}</p>
+
+  <ion-item *ngIf="esUsuarioDocente()">
+    <ion-label position="floating">Digite una palabra</ion-label>
+    <ion-input type="text" [(ngModel)]="data.texto"></ion-input>
+  </ion-item>
+  
+
+  <ion-button *ngIf="esUsuarioDocente()" (click)="generarQr()" expand="block" color="primary" shape="round">
+    Generar QR
+  </ion-button>
+
+  <ion-card *ngIf="esUsuarioDocente()" class="ion-text-center">
+    <ion-card-content>
+      <qrcode [qrdata]="mensaje" [width]="240" 
+              [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-content *ngIf="esUsuarioEstudiante()" [fullscreen]="true">
+    <img src="assets/duoc.png" class="duoc">
+    <ion-title class="titulo">RegistrAPP</ion-title>
+    <img src="assets/qa.png" class="logo">
+  <ion-button *ngIf="esUsuarioEstudiante()" (click)="escanearCodigoBarras()">Escanear Código de Barras</ion-button>
+
+ 
+
+
+
+</ion-content>
+
+
+

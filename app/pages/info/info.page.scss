@@ -1,0 +1,49 @@
+.imgqr{
+width: 80%;
+padding-left: 25%;
+
+}
+
+.fondoNos{
+    --background: url('../../../assets/fondito.png')  ;
+    background-size : auto;
+}
+
+ion-header {
+    --ion-background-color: #000080; /* Azul marino */
+  }
+
+ion-title {
+color: aliceblue; /* Dorado */
+}
+
+.tit{
+    
+    font-weight: bold;
+    color:gold;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.texto{
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.fond{
+    background-image: url('../../../assets/fondito.png');
+}
+
+.fondoDuoc{
+    background-image: url('../../../assets/fondito.png');
+}
+
+.tit2{
+    font-weight: bold;
+    color:gold;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+

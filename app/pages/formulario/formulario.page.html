@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-back-button defaultHref="inicio" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="assets/duoc.png" class="duoc">
+  <ion-title class="titulo">RegistrAPP</ion-title>
+  <img src="assets/qa.png" class="logo">
+  
+
+  <ion-card>
+    <ion-card-header>
+     <ion-card-title>Registro de Usuario</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-content>
+    <form>
+
+      <ion-item>
+        <ion-label>Rol:</ion-label>
+        <ion-select [(ngModel)]="newUsuario.role" name="rol" placeholder="Seleccione un rol" required>
+          <ion-select-option value="estudiante">Estudiante</ion-select-option>
+          <ion-select-option value="docente">Docente</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Nombre:</ion-label>
+        <ion-input type="text" name="txtNombre" [(ngModel)]="newUsuario.username" placeholder="Jorge" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Contrasenia:</ion-label>
+        <ion-input type="password" name="txtContrasenia" [(ngModel)]="newUsuario.password" placeholder="Jorge" required></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newUsuario.role === 'docente'">
+        <ion-label position="floating">Ramo</ion-label>
+        <ion-input [(ngModel)]="(newUsuario).ramo" name="ramo"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newUsuario.role === 'docente'">
+        <ion-label position="floating">Ramo secundario</ion-label>
+        <ion-input [(ngModel)]="(newUsuario).ramo2" name="ramo2"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newUsuario.role === 'docente'">
+        <ion-label position="floating">Anio</ion-label>
+        <ion-input [(ngModel)]="(newUsuario).anio" name="anio"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newUsuario.role === 'docente'">
+        <ion-label position="floating">semestre</ion-label>
+        <ion-input [(ngModel)]="(newUsuario).semestre" name="semestre"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newUsuario.role === 'docente'">
+        <ion-label position="floating">Horas Semanales</ion-label>
+        <ion-input [(ngModel)]="(newUsuario).horas" name="horas"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newUsuario.role === 'estudiante'">
+        <ion-label position="floating">Carrera</ion-label>
+        <ion-input [(ngModel)]="(newUsuario).carrera" name="carrera"></ion-input>
+      </ion-item>
+     
+    
+  
+      
+  
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="crearUsuario()" expand="block" color="success">Crear Usuario</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  
+  </ion-content>
+
+
+</ion-content>

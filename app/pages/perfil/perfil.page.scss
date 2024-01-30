@@ -1,0 +1,80 @@
+ion-content {
+    --background: url('../../../assets/fondito.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5F5F5;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+  }
+  
+  .duoc {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-left: 10%;
+  }
+  
+  ion-header {
+    --ion-background-color: #000080;
+  }
+  
+  
+  .titu_inicio {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .email {
+    margin-top: -10%;
+  }
+  
+  ion-card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F5F5F5;
+  }
+  
+  ion-card-header {
+    --background: url('../../../assets/fondito.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  ion-item {
+    --ion-background-color: #FFD700;
+    --ion-text-color: #000080;
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  ng-container{
+    background-color: #FFD700;
+  }
+
+  ion-title{
+    --ion-background-color: #FFD700;
+    --ion-text-color: #000080;
+    margin-bottom: 10px;
+    border: none;
+  }
+  ng-container[ngClass="usuario-logeado-true"] {
+   background-color: #FFD700;
+  }

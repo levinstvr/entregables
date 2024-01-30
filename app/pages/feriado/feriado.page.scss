@@ -1,0 +1,26 @@
+ion-header {
+    --ion-background-color: #000080;
+  }
+  
+  ion-title {
+    color: aliceblue;
+  }
+  
+  ion-content {
+    --ion-background-color: #000080; /* Cambia el color de fondo */
+  }
+  
+  ion-card {
+    --ion-background-color: #F5F5F5; /* Cambia el color de fondo */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  ion-card-subtitle {
+    color: #000080; /* Cambia el color del subtítulo del card */
+  }
+  
+  .text-primary {
+    color: #000080; /* Cambia el color del texto primario */
+  }

@@ -1,0 +1,27 @@
+<!-- En tu asistencia.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+      <ion-buttons slot="primary">
+        <ion-back-button defaultHref="inicio" color="light"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>
+      Asistencia
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let palabra of palabras">
+      <ion-label>
+        {{ palabra.username }} - {{ palabra.palabra }}
+        <p>Fecha: {{ palabra.fecha }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

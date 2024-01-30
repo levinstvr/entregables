@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-back-button defaultHref="inicio" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nosotros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondoNos" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Nosotros</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="fond">
+    <ion-card-header class="encabezado">
+      <img src="assets/qa.png" class="imgqr">
+      <ion-card-title class="tit">Que es RegistrAPP?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <p class="texto">
+        La aplicación RegistrAPP simplifica el registro de asistencia mediante códigos QR. Docentes ahorran tiempo y obtienen datos precisos, mientras estudiantes disfrutan de un proceso eficiente y seguimiento académico mejorado
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="fondoDuoc">
+    <img src="assets/duoc.png" class="ion-padding imagen">
+    <ion-card-header class="encabezado">
+      <ion-card-title class="tit2">Que es DUOC UC?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <p class="texto">       <!--aplicar estilos: cambiar tipo, alineación de texto, color, padding-->
+        Duoc UC es una destacada institución educativa de Chile, reconocida por su excelencia académica y compromiso con la formación integral de estudiantes. Ofrece una amplia variedad de programas y recursos para el éxito educativo.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+
+  
+
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Eliminar Animalito</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/listar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{docente.id}}</ion-card-subtitle>
+      <ion-card-title>Realmente desea eliminar  {{docente.nombre}}?: </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+       <ion-button (click)="eliminarDocente()" expand="block" color="danger" shape="round">
+        Eliminar
+       </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

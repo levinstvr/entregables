@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-back-button defaultHref="inicio" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Actualizar </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Actualizar </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+   
+  </ion-card>
+
+  <form>
+    
+    <ion-item >
+      <ion-label>Usuario: </ion-label>
+      <ion-input type="text" name="txtUsername" [(ngModel)]="usuario.username" disabled></ion-input>
+    </ion-item> 
+    <ion-item *ngIf="esUsuarioDocente()">
+      <ion-label>Ramo: </ion-label>
+      <ion-input type="text" name="txtRamo" [(ngModel)]="usuario.ramo" disabled></ion-input>
+    </ion-item> 
+    <ion-item *ngIf="esUsuarioDocente()">
+      <ion-label>Ramo secundario: </ion-label>
+      <ion-input type="text" name="txtRamo2" [(ngModel)]="usuario.ramo2" disabled></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-label>Año: </ion-label>
+      <ion-input type="text" name="txtAnio" [(ngModel)]="usuario.anio"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-label position="floating">Password: </ion-label>
+      <ion-input type="password" name="txtPass" [(ngModel)]="usuario.password"></ion-input>
+    </ion-item>
+    
+    <ion-item *ngIf="esUsuarioDocente()">
+      <ion-label position="floating">Horas: </ion-label>
+      <ion-input type="text" name="txtHoras" [(ngModel)]="usuario.horas"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="esUsuarioDocente()">
+      <ion-label position="floating">Semestre: </ion-label>
+      <ion-input type="text" name="txtSemestre" [(ngModel)]="usuario.semestre"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="esUsuarioEstudiante()">
+      <ion-label position="floating">Semestre: </ion-label>
+      <ion-input type="text" name="txtSemestre" [(ngModel)]="usuario.semestre"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="esUsuarioEstudiante()">
+      <ion-label position="floating">Carrera: </ion-label>
+      <ion-input type="text" name="txtCarrera" [(ngModel)]="usuario.carrera"></ion-input>
+    </ion-item>
+
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="ActualizarUsuario()">Actualizar Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

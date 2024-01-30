@@ -1,0 +1,185 @@
+{
+  "docentes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "asignatura": "arquitectura"
+    },
+    {
+      "id": 2,
+      "nombre": "Maria",
+      "asignatura": "programacion"
+    },
+    {
+      "id": 3,
+      "nombre": "Pablo",
+      "asignatura": "base de datos"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "cachupin",
+      "password": "duoc",
+      "role": "",
+      "ramo": "arquitectura, Calidad",
+      "anio": "2023",
+      "semestre": "4to semestre",
+      "horas": "45",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "username": "cachupina",
+      "password": "maipu",
+      "role": "usuario",
+      "ramo": "programacion",
+      "ramo2": "estadistica",
+      "anio": "2023",
+      "semestre": "6to semestre",
+      "horas": "60",
+      "isactive": true
+    },
+    {
+      "id": 3,
+      "username": "Barto",
+      "role": "estudiante",
+      "password": "hola123",
+      "isactive": true
+    },
+    {
+      "id": 4,
+      "username": "vixo",
+      "role": "estudiante",
+      "password": "duoc123",
+      "anio": "",
+      "semestre": "",
+      "horas": "",
+      "carrera": "mecanica",
+      "isactive": true
+    },
+    {
+      "id": 5,
+      "username": "juan",
+      "role": "docente",
+      "password": "cual123",
+      "anio": "2013",
+      "semestre": "6to semestre",
+      "horas": "9898989",
+      "carrera": "",
+      "isactive": true
+    },
+    {
+      "id": 6,
+      "username": "barto",
+      "role": "estudiante",
+      "ramo": "",
+      "ramo2": "",
+      "password": "duoc123",
+      "anio": "2023",
+      "semestre": "primer semestre",
+      "horas": "",
+      "carrera": "informatica",
+      "isactive": true
+    },
+    {
+      "username": "levin",
+      "password": "kjgo1212",
+      "ramo": "",
+      "ramo2": "",
+      "anio": "",
+      "semestre": "",
+      "horas": "",
+      "role": "estudiante",
+      "carrera": "mecanica",
+      "isactive": true,
+      "id": 7
+    },
+    {
+      "username": "levin",
+      "password": "kjgo1212",
+      "ramo": "",
+      "ramo2": "",
+      "anio": "",
+      "semestre": "",
+      "horas": "",
+      "role": "estudiante",
+      "carrera": "mecanica",
+      "isactive": true,
+      "id": 8
+    }
+  ],
+  "palabras": [
+    {
+      "id": 1,
+      "username": "cachupin",
+      "palabra": ""
+    },
+    {
+      "username": "juan",
+      "palabra": "Clase Estadistica",
+      "fecha": "2023-11-23T01:18:17.868Z",
+      "id": 2
+    },
+    {
+      "username": "barto",
+      "palabra": "Clase Estadistica",
+      "fecha": "2023-11-23T01:18:54.768Z",
+      "id": 3
+    },
+    {
+      "username": "juan",
+      "palabra": "Clase programacion",
+      "fecha": "2023-11-23T01:21:48.551Z",
+      "id": 4
+    },
+    {
+      "username": "barto",
+      "palabra": "Clase programacion",
+      "fecha": "2023-11-23T01:22:18.634Z",
+      "id": 5
+    },
+    {
+      "username": "juan",
+      "palabra": "clase etica",
+      "fecha": "2023-11-23T01:28:12.004Z",
+      "id": 6
+    },
+    {
+      "username": "barto",
+      "palabra": "clase etica",
+      "fecha": "2023-11-23T01:28:37.692Z",
+      "id": 7
+    },
+    {
+      "username": "juan",
+      "palabra": "clase fornite",
+      "fecha": "2023-11-23T03:27:18.437Z",
+      "id": 8
+    },
+    {
+      "username": "barto",
+      "palabra": "clase fornite",
+      "fecha": "2023-11-23T03:29:18.616Z",
+      "id": 9
+    },
+    {
+      "username": "barto",
+      "palabra": "clase fornite",
+      "fecha": "2023-11-23T06:44:54.552Z",
+      "id": 10
+    },
+    {
+      "username": "juan",
+      "palabra": "",
+      "fecha": "2023-11-23T06:46:21.090Z",
+      "id": 11
+    },
+    {
+      "username": "barto",
+      "palabra": "clase fornite",
+      "fecha": "2023-11-23T16:25:54.448Z",
+      "id": 12
+    }
+  ]
+}

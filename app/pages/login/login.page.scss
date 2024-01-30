@@ -1,0 +1,67 @@
+ion-content {
+  --background: url('../../../assets/fondito.png')  ;
+  background-size : auto;
+  
+  }
+
+  .titulo{
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #F5F5F5; /* Color azul (puedes cambiarlo) */
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    text-transform: uppercase; /* Convertir el texto en mayúsculas */
+    /* Agregar sombra de texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .logo {
+      display: block; /* Asegura que la imagen sea un elemento en bloque */
+      margin: 0 auto; /* Margen automático horizontal para centrarla */
+      width: 15%; /* Ancho deseado */
+    }
+
+    .duoc {
+      display: block; /* Asegura que la imagen sea un elemento en bloque */
+      margin: 0 auto; /* Margen automático horizontal para centrarla */
+      width: 40%;
+      padding-left: 10%; /* Ancho deseado */
+    }
+
+    ion-header {
+      --ion-background-color: #000080; /* Azul marino */
+    }
+
+    ion-title {
+      color: aliceblue; /* Dorado */
+    }
+
+    .titu_inicio{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      
+    }
+
+    .email{
+      margin-top: -10%;
+    }
+
+    ion-card-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #F5F5F5;
+    }
+
+    ion-card-header {
+      --background: url('../../../assets/fondito.png')  ;
+      background-size : auto;
+    }
+
+    ion-item {
+      --ion-background-color: #FFD700; /* Dorado para los campos */
+      --ion-text-color: #000080; /* Texto en azul marino para los campos */
+      margin-bottom: 10px;
+      border-style: none;
+    }
